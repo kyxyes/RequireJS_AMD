@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angularjs+RequireJs</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/paper/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+</head>
+<body>
+
+<script src="//marcoslin.github.io/angularAMD/js/lib/requirejs/require.js" data-main="main"></script>
+<body>
+<div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <a href="/" class="navbar-brand"><i class="ion-images"></i> FinancialTracker</a>
+            <li><a ng-href="#/home">Home</a></li>
+            <li><a ng-href="#/overview">Overview</a></li>
+            <li><a ng-href="/transaction">Transaction</a></li>
+            <li><a ng-href="/login">Log in</a></li>
+            <li><a ng-href="/signup">Sign up</a></li>
+            <li><a ng-click="logout()" href="">Logout</a></li>
+        </ul>
+    </div>
+</div>
+<div ui-view="main"></div>
+</body>
+</body>
+</html>
